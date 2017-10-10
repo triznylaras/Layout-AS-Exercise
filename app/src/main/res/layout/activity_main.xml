@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.triznylarasati.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Masukkan pesan" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/editText5"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/chat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button7"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Alhamdulillaah baik" />
+
+        <TextView
+            android:id="@+id/chat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/chat2"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:text="Haiii apa kabar?" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
